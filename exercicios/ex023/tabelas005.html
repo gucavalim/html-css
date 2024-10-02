@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas em Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        col.ahum {
+            background-color: blueviolet;
+        }
+
+        col.ahdois {
+            background-color: chartreuse;
+        }
+
+        col.ahtres {
+            background-color: darkseagreen;
+        }
+
+        col.ahquatro {
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercício de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="ahum">
+            <col class="ahdois">
+            <col class="ahtres">
+            <col class="ahquatro">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Gustavo Silva</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Leila Pereira</td>
+            <td>F</td>
+            <td>41</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Karina Jubanski</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Psicólogo</td>
+        </tr>
+        <tr>
+            <td>Gabriel Barbosa</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Culinário</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
